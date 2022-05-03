@@ -4,8 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron:  '1 12 * * 1-5' #M-F at 12:01pm UTC
-
+    - cron:  '1 12,16 * * 1-5' #M-F at 12:01pm UTC, ~5:01am/9:01am PST
 jobs:
   scheduled:
     runs-on: ubuntu-latest
